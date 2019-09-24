@@ -1,0 +1,7 @@
+<input type='text' id="filmSearch"/>
+
+<button (click)='getFilm()'>Search films</button>
+
+<div *ngFor="let film of films"> <!-- *ngfor is used for repeating directives, like running through items in a list/array -->
+    <span>{{film.title}}</span>
+</div>
